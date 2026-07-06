@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { ArrowRight, Sparkles, Star } from "lucide-react";
+import { ArrowRight, Star } from "lucide-react";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -152,9 +152,8 @@ export default function Description() {
           ref={textRef}
           className="max-w-2xl bg-dark/75 backdrop-blur-md border border-white/10 p-8 md:p-12 text-center flex flex-col items-center gap-6 shadow-2xl relative"
         >
-          {/* Tag */}
-          <div className="flex items-center gap-2 bg-cream/10 backdrop-blur-sm border border-cream/20 px-4 py-1.5 rounded-full text-xs font-mono tracking-widest uppercase">
-            <Sparkles className="w-3.5 h-3.5 text-orange-dark animate-pulse" />
+          {/* Brutalist Sticker / Stamp style */}
+          <div className="bg-orange-dark text-dark px-4 py-2 font-mono text-xs font-black tracking-widest uppercase transform rotate-2 shadow-[3px_3px_0px_#FFF] border-2 border-dark select-none">
             L'ÉVÉNEMENT DE L'ANNÉE
           </div>
 

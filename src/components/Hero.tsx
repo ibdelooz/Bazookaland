@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
-import { ArrowDown, Music, Sparkles, MapPin } from "lucide-react";
+import { ArrowDown, Music, MapPin } from "lucide-react";
 
 export default function Hero() {
   const heroRef = useRef<HTMLDivElement>(null);
@@ -74,16 +74,16 @@ export default function Hero() {
           <span className="text-orange-dark hover:text-cream transition-colors duration-300">LAND</span>
         </h1>
 
-        {/* Tag line with icons (Moved below title to prevent overlapping with header nav) */}
+        {/* Brutalist Sticker Tag (Style Sticker/Graffiti) */}
         <div
           ref={subtitleRef}
-          className="flex flex-wrap items-center justify-center gap-3 mb-8 md:mb-10 bg-orange-dark/10 backdrop-blur-md border border-orange-dark/20 px-5 py-2.5 rounded-full text-orange-dark font-mono text-xs tracking-widest uppercase"
+          className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 mb-8 md:mb-10 bg-dark border-2 border-orange-dark px-6 py-3 font-mono text-xs tracking-widest uppercase transform -rotate-2 shadow-[4px_4px_0px_#E15B3E] select-none"
         >
-          <span className="flex items-center gap-1.5 font-bold">
-            <Sparkles className="w-3.5 h-3.5 animate-pulse" /> AKAF FAMILY PRÉSENTE
+          <span className="font-extrabold text-orange-dark">
+            AKAF FAMILY PRÉSENTE
           </span>
-          <span className="text-cream/30">|</span>
-          <span className="flex items-center gap-1.5 text-cream">
+          <span className="hidden sm:inline text-cream/40">•</span>
+          <span className="text-cream flex items-center gap-1.5 font-semibold">
             <MapPin className="w-3.5 h-3.5 text-orange-dark" /> LOMÉ, TOGO
           </span>
         </div>
