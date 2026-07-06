@@ -1,0 +1,6 @@
+{
+  "name": "Bazookaland",
+  "description": "Bazookaland — événement culturel à Lomé, Togo, organisé par Akaf Family. Musique + culture urbaine. For the culture !!!",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
