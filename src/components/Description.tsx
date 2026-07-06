@@ -3,6 +3,13 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ArrowRight, Star } from "lucide-react";
 
+// Static imports for production-compatible build (Vite asset pipeline)
+import danceImg from "../assets/images/bazookaland_dance_1783341760375.jpg";
+import crowdImg from "../assets/images/bazookaland_crowd_1783341746949.jpg";
+import artistImg from "../assets/images/bazookaland_artist_1783338894284.jpg";
+import singerImg from "../assets/images/bazookaland_singer_1783341775079.jpg";
+import heroImg from "../assets/images/bazookaland_hero_1783338869585.jpg";
+
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Description() {
@@ -96,7 +103,7 @@ export default function Description() {
         {/* Photo 1: Top-Left (Dance stage energy) */}
         <div className="collage-photo absolute top-8 left-[-4%] md:left-[2%] w-36 sm:w-56 md:w-64 aspect-[4/3] shadow-2xl border border-white/20 transform -rotate-6 pointer-events-auto hover:rotate-0 hover:scale-105 hover:z-30 transition-all duration-300 overflow-hidden">
           <img
-            src="/src/assets/images/bazookaland_dance_1783341760375.jpg"
+            src={danceImg}
             alt="Dancers at Bazookaland"
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"
@@ -106,7 +113,7 @@ export default function Description() {
         {/* Photo 2: Top-Right (Crowd with stage lights) */}
         <div className="collage-photo absolute top-4 right-[-6%] md:right-[3%] w-44 sm:w-64 md:w-80 aspect-[4/3] shadow-2xl border border-white/20 transform rotate-3 pointer-events-auto hover:rotate-0 hover:scale-105 hover:z-30 transition-all duration-300 overflow-hidden">
           <img
-            src="/src/assets/images/bazookaland_crowd_1783341746949.jpg"
+            src={crowdImg}
             alt="Festival crowd"
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"
@@ -116,7 +123,7 @@ export default function Description() {
         {/* Photo 3: Mid-Left (Artist close up) */}
         <div className="collage-photo absolute bottom-24 left-[-5%] md:left-[5%] w-32 sm:w-48 md:w-56 aspect-[3/4] shadow-2xl border border-white/20 transform -rotate-3 pointer-events-auto hover:rotate-0 hover:scale-105 hover:z-30 transition-all duration-300 overflow-hidden hidden sm:block">
           <img
-            src="/src/assets/images/bazookaland_artist_1783338894284.jpg"
+            src={artistImg}
             alt="Bazookaland performance"
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"
@@ -126,7 +133,7 @@ export default function Description() {
         {/* Photo 4: Bottom-Right (Singer spotlight orange theme) */}
         <div className="collage-photo absolute bottom-8 right-[-4%] md:right-[2%] w-40 sm:w-60 md:w-72 aspect-[3/4] shadow-2xl border border-white/20 transform rotate-4 pointer-events-auto hover:rotate-0 hover:scale-105 hover:z-30 transition-all duration-300 overflow-hidden">
           <img
-            src="/src/assets/images/bazookaland_singer_1783341775079.jpg"
+            src={singerImg}
             alt="Live performance singer"
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"
@@ -136,7 +143,7 @@ export default function Description() {
         {/* Photo 5: Bottom-Left (General crowd energy) */}
         <div className="collage-photo absolute bottom-6 left-[-2%] sm:left-[1%] md:left-[12%] w-36 sm:w-56 aspect-[4/3] shadow-2xl border border-white/20 transform -rotate-2 pointer-events-auto hover:rotate-0 hover:scale-105 hover:z-30 transition-all duration-300 overflow-hidden">
           <img
-            src="/src/assets/images/bazookaland_hero_1783338869585.jpg"
+            src={heroImg}
             alt="Bazookaland culture crowd"
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"

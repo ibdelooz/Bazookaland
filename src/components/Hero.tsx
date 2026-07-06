@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ArrowDown, Music, MapPin } from "lucide-react";
+import heroImg from "../assets/images/bazookaland_hero_1783338869585.jpg";
 
 export default function Hero() {
   const heroRef = useRef<HTMLDivElement>(null);
@@ -55,7 +56,7 @@ export default function Hero() {
       {/* High-quality background generated picture with dark high-contrast overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/src/assets/images/bazookaland_hero_1783338869585.jpg"
+          src={heroImg}
           alt="Bazookaland Festival Vibe"
           className="w-full h-full object-cover object-center filter saturate-75 brightness-75 scale-105"
         />
