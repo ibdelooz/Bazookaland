@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { MapPin, Mail, Phone, Instagram, Youtube, Twitter, Heart, ArrowUp } from "lucide-react";
+import { MapPin, Mail, Phone, Instagram, Youtube, Twitter, ArrowUp } from "lucide-react";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -108,9 +108,7 @@ export default function Footer() {
                 AKAF FAMILY
               </span>
               <span>•</span>
-              <span className="flex items-center gap-1">
-                Fait avec <Heart className="w-3 h-3 text-red-500 fill-red-500" /> à Lomé.
-              </span>
+              <span>Fait par Hamza.</span>
             </div>
           </div>
         </div>
